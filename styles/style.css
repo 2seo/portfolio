@@ -1,0 +1,46 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid red;
+
+    @media (max-width: 800px) {
+        justify-content: flex-end;
+    }
+
+    .name {
+        a {
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        @media (max-width: 800px) {
+            display: none;
+        }
+    }
+    .menus {
+        a{
+            font-size: 12px;
+            padding: 3px;
+            margin: 10px;
+        }
+        a:hover {
+            color: white;
+            background-color: black;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+
+main {
+    border: 1px solid blue;
+}
+
+footer {
+    border: 1px solid yellow;
+}
