@@ -1,5 +1,13 @@
+@import "theme.css";
+
+body {
+    background: var(--background);
+    color: var(--fontColor);
+}
+
 header {
     position: fixed;
+    background-color: var(--background);
     width: 100vw;
     height: 50px;
     display: flex;
@@ -7,9 +15,9 @@ header {
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    border: 1px solid red;
+    opacity: 0.8;
 
-    @media (max-width: 800px) {
+    @media (max-width: 550px) {
         justify-content: flex-end;
     }
 
@@ -19,28 +27,32 @@ header {
             letter-spacing: 3px;
         }
 
-        @media (max-width: 800px) {
+        @media (max-width: 550px) {
             display: none;
         }
     }
+
     .menus {
-        a{
+        a {
             font-size: 12px;
             padding: 3px;
             margin: 10px;
         }
+
         a:hover {
-            color: white;
-            background-color: black;
-            transition: all 0.5s ease-in-out;
+            color: var(--background);
+            background-color: var(--fontColor);
+            transition: all 0.3s ease-in-out;
         }
     }
 }
 
 main {
+    height: 100vh;
     border: 1px solid blue;
 }
 
 footer {
+    height: 50vh;
     border: 1px solid yellow;
 }

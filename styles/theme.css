@@ -1,0 +1,9 @@
+:root[color-theme='light'] {
+    --background: #fff;
+    --fontColor: #212529;
+}
+
+:root[color-theme='dark'] {
+    --background: #212529;
+    --fontColor: #fff;
+}
