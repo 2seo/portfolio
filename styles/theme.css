@@ -1,9 +1,17 @@
+:root {
+    --background: #fff;
+    --fontColor: #212529;
+    --pointColor: #9cf;
+}
+
 :root[color-theme='light'] {
     --background: #fff;
     --fontColor: #212529;
+    --pointColor: #9cf;
 }
 
 :root[color-theme='dark'] {
     --background: #212529;
     --fontColor: #fff;
+    --pointColor: #fe0;
 }
